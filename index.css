@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/*GENERAL STYLES*/
+
+*{
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+}
+
+:root{
+    /*PRIMARY*/
+    --SoftBlue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    /*NEURAL*/
+    --VeryDarkBlueMain: hsl(217, 54%, 11%);
+    --VeryDarkBlueCard: hsl(216, 50%, 16%);
+    --VeryDarkBlueLine: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    /*FONT STYLES*/
+    --FontSizeP: 18px;
+    --Family: 'Outfit', sans-serif;
+}
+
+body{
+    background-color: var(--VeryDarkBlueMain);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--Family);
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+h4{
+    font-weight: 300;
+}
+
+hr{
+    background-color: var(--VeryDarkBlueLine);
+    height: 1px;
+}
+
+/*NFT PREVIEW CARD COMPONENT*/
+
+.card{
+    background-color: var(--VeryDarkBlueCard);
+    max-width: 300px;
+    margin: auto;
+    max-height: auto;
+    padding: 15px;
+    border-radius: 18px;
+}
+
+.card .card-img-top{
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.card .card-title{
+    color: var(--White);
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.card .card-title:active{
+    color: var(--Cyan);
+}
+
+.card .card-text{
+    color: var(--SoftBlue);
+}
+
+.card .buy{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .buy .ethereum{
+    color: var(--Cyan);
+}
+
+.card .buy .time{
+    color: var(--SoftBlue);
+}
+
+.card .buy .row{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card footer{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.card footer .avater-img{
+    width: 40px;
+}
+
+.card footer .avater-img img{
+    border-radius: 50%;
+    border: 1px solid var(--White);
+}
+
+.card footer .author{
+    color: var(--White);
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.card footer .author:active{
+    color: var(--Cyan);
+}
+
+.card footer .copyright{
+    color: var(--White);
+    font-weight: 300;
+}
